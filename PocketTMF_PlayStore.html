@@ -1,6 +1,6 @@
 ---
 theme: jekyll-theme-minimal
-title: Pocket TMF Provacy Statement
+title: Pocket TMF Privacy Statement
 description: Bookmark this to keep an eye on my project updates!
 ---
 
@@ -50,59 +50,77 @@ description: Bookmark this to keep an eye on my project updates!
     <h1>Privacy Statement</h1>
     <h2>Pocket TMF App</h2>
 
-    <p><em>Last Updated: 7th June 2025</em></p>
+    <p><em>Last Updated: 6th November 2026</em></p>
 
     <h2>Overview</h2>
-    <p>Pocket TMF is a reference application that provides access to the standardized Trial Master File (TMF) Reference Model Version 3.3.1. This privacy statement explains how our app handles your information.</p>
+    <p>Pocket TMF is a reference application that provides access to the Trial Master File (TMF) Reference Model Version 3.3.1, the TMF Standard Model V1 draft, and the Investigator Site File (ISF) Reference Model Version 1.0 (Provisional). This privacy statement explains how the app handles your information.</p>
 
     <h2>Information We Collect</h2>
-    <p>We do not collect any personal information. This app operates entirely offline and does not:</p>
+    <p>We do not collect any personal information. The app works offline and does not:</p>
     <ul>
         <li>Collect personal data such as names, email addresses, or contact information</li>
         <li>Access your device's camera, microphone, or location services</li>
         <li>Require user accounts or registration</li>
-        <li>Connect to external servers or databases</li>
-        <li>Track user behavior or usage analytics</li>
+        <li>Connect to external servers or databases, apart from the usage figures Google's ML Kit sends while Use Gemini Nano is on (see Ask the Model and Gemini Nano)</li>
+        <li>Track user behavior or collect usage analytics of its own</li>
         <li>Access your contacts, photos, or other personal files</li>
     </ul>
 
     <h2>Data Usage</h2>
     <p>The app contains only:</p>
     <ul>
-        <li>Static Reference Content: Pre-loaded TMF Reference Model data (zones, sections, artifacts, and their definitions)</li>
-        <li>Local App Preferences: Settings you configure (such as color scheme, theme mode, and app icon preferences) are stored locally on your device using Android SharedPreferences</li>
+        <li>Static reference content: pre-loaded TMF, Standard Model V1, and ISF data (zones, sections or record groups, artifacts, and their definitions)</li>
+        <li>Local app preferences: settings you configure (such as color scheme, theme, app icon, and navigation) are stored on your device with Jetpack DataStore</li>
+        <li>Favorites and personal notes: artifact favorites and notes you write (up to 240 characters each) are stored on your device with Jetpack DataStore and are not sent anywhere</li>
     </ul>
 
     <h2>Data Storage</h2>
-    <p>All data in this app is stored locally on your device:</p>
+    <p>All data in this app stays on your device:</p>
     <ul>
-        <li>Reference Model Data: The TMF content is built into the app and cannot be modified</li>
-        <li>User Preferences: Your app settings (appearance preferences, selected color schemes, etc.) are stored locally using Android standard SharedPreferences and remain on your device</li>
-        <li>No Cloud Storage: No information is transmitted to or stored on external servers</li>
+        <li>Reference model data: the TMF, Standard Model V1, and ISF content is built into the app</li>
+        <li>User data: preferences, favorites, and personal notes are stored locally with Jetpack DataStore. Android backup is turned off, so this data is not copied to a new device</li>
+        <li>No cloud storage: nothing you enter in the app is transmitted to or stored on external servers. The app connects to the network only for Google's ML Kit usage figures while Use Gemini Nano is on. Links and email open in other apps on your device</li>
     </ul>
+    <p>Clearing the app's storage, or uninstalling the app, deletes preferences, favorites, and notes.</p>
+
+    <h2>Ask the Model and Gemini Nano</h2>
+    <p>Ask the Model finds where a document belongs in the TMF or ISF Reference Model. On its own it uses Smart Search, which runs entirely in the app. On Android devices that support it, Ask the Model can also use Gemini Nano, Google's on-device AI model, if you turn on Use Gemini Nano in Settings. It is off until you turn it on, and the app tells you what it involves before it turns on.</p>
+    <p>Gemini Nano runs on your device. Google's terms say your questions and Gemini Nano's answers stay on the device and are not sent to Google. The app reaches Gemini Nano through Google's ML Kit, and while Use Gemini Nano is on, ML Kit sends Google usage figures, which Google lists as:</p>
+    <ul>
+        <li>the device's make, model, Android version and build, and its AI hardware</li>
+        <li>the app's package name and version</li>
+        <li>per-installation identifiers that Google says are not intended to identify you or your device</li>
+        <li>performance figures such as timings, the settings used, the size of each request and reply, and error codes</li>
+        <li>events such as starting the feature, model downloads and requests</li>
+        <li>the configured languages</li>
+    </ul>
+    <p>Google says it uses these figures for diagnostics and usage analytics, sends them over HTTPS and does not pass them to third parties. Google handles them under its own privacy policy. Google's list is at <a href="https://developers.google.com/ml-kit/android-data-disclosure">developers.google.com/ml-kit/android-data-disclosure</a>.</p>
+    <p>Turning Use Gemini Nano off stops the app using ML Kit.</p>
 
     <h2>Third-Party Services</h2>
-    <p>This app does not integrate with any third-party services, analytics platforms, or advertising networks.</p>
+    <p>This app does not include advertising networks or analytics platforms of its own. Its one third-party service is Google's ML Kit, used only while Use Gemini Nano is on, as described in Ask the Model and Gemini Nano.</p>
 
     <h2>Data Sharing</h2>
-    <p>We do not share any data because we do not collect any personal information. All app functionality operates locally on your device.</p>
+    <p>We do not collect any personal information, so we have none to share. While Use Gemini Nano is on, Google's ML Kit sends Google the usage figures described in Ask the Model and Gemini Nano.</p>
 
     <h2>Children's Privacy</h2>
-    <p>This app is safe for users of all ages as it does not collect any personal information or communicate with external services.</p>
+    <p>This app is safe for users of all ages as it does not collect any personal information. Use Gemini Nano is off until it is turned on, and while it is off the app does not communicate with external services.</p>
 
     <h2>Data Security</h2>
-    <p>Since no personal data is collected or transmitted:</p>
+    <p>The app does not collect or transmit personal information:</p>
     <ul>
-        <li>All app data remains on your local device</li>
-        <li>No network communications occur during normal app usage</li>
+        <li>Preferences, favorites, and notes remain on your device</li>
+        <li>Apart from Google's ML Kit usage figures while Use Gemini Nano is on, the app does not connect to the network</li>
         <li>Your privacy is protected by Android security features</li>
     </ul>
 
     <h2>Your Rights</h2>
-    <p>As we do not collect personal information, there is no personal data to access, modify, or delete. You can:</p>
+    <p>The app does not collect personal information, so there is no personal data held by us to access, modify, or delete. On your device you can:</p>
     <ul>
-        <li>Reset app preferences by clearing app data or uninstalling and reinstalling the app</li>
-        <li>Change appearance settings within the app at any time</li>
+        <li>Change appearance settings at any time</li>
+        <li>Remove favorites and edit or delete notes inside the app</li>
+        <li>Delete preferences, favorites, and notes by clearing the app's storage or uninstalling it</li>
+        <li>Turn Use Gemini Nano on or off at any time in Settings › Smart Search</li>
     </ul>
 
     <h2>Changes to This Privacy Policy</h2>
@@ -118,10 +136,10 @@ description: Bookmark this to keep an eye on my project updates!
     </ul>
 
     <h2>Note</h2>
-    <p>This privacy statement reflects the current functionality of the Pocket TMF app as a standalone, offline reference tool that does not collect, transmit, or store any personal user information.</p>
+    <p>This privacy statement reflects the current functionality of the Pocket TMF app as a reference tool that works offline. The app does not collect personal information. Preferences, favorites, and notes stay on the device. Apart from Google's ML Kit usage figures while Use Gemini Nano is on, the app does not transmit anything.</p>
 
     <h2>Contact</h2>
     <p>For any support please contact:</p>
     <p><a href="mailto:rtjonesdev@gmail.com">rtjonesdev@gmail.com</a></p>
 </body>
-</html> 
+</html>
